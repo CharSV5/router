@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link, Route, Switch } from 'react-router-dom';
 import Category from './Category';
+import Products from './Products'
 
 const Home = () => (
   <div>
@@ -8,18 +9,13 @@ const Home = () => (
   </div>
 )
 
-const Products = () => (
-  <div>
-    <h2>Products</h2>
-  </div>
-)
 
 class App extends Component {
   render() {
     return (
       <div>
         <nav className="navbar navbar_light">
-          <ul classname="nav navbar-nav">
+          <ul className="nav navbar-nav">
 
             <li><Link to="/">Home</Link></li>
             <li><Link to="/category">Category</Link></li>
